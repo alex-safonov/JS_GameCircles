@@ -1,2 +1,2 @@
-# JavaScript_Game_Circles
-JavaScript_Game_Circles
+# JavaScript_Game_Circles_and_Squares
+Проверь свою реакцию
