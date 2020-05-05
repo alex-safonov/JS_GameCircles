@@ -1,2 +1,3 @@
 # JavaScript_Game_Circles_and_Squares
-Проверь свою реакцию
+
+Мини-игра на JavaScript на проверку реакции 
