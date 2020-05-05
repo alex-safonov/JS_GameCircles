@@ -5,29 +5,10 @@
 	<title>Game_Circles</title>
 
 <link rel="stylesheet" type="text/css" href="file.css">
-
-<!-- <style type="text/css">
-
-body {
-	font-family: sans-serif;
-	text-align: center;
-}	
-
-#shape {
-	width: 100px;
-	height: 100px;
-	background-color: #f00;
-	display: none;
-	position: relative;
-}
-
-.bold {
-	font-weight: bold;
-}
-
-</style> -->
+<script src="functions.js"></script>
 
 </head>
+
 <body>
 	<h1>Проверь свою реакцию</h1>
 	<p>Кликни по появляющейся фигуре настолько быстро, настолько ты сможешь</p>
@@ -38,45 +19,45 @@ body {
 	
 var start = new Date().getTime;
 
-	function getRandomColor() {
+	// function getRandomColor() {
 
-		var letters = '012345678ABCDEF'.split('');
-		var color = '#';
+	// 	var letters = '012345678ABCDEF'.split('');
+	// 	var color = '#';
 
-		for (var i=0; i<6; i++) {
-			color += letters[Math.floor(Math.random() * 16)];
-		}
+	// 	for (var i=0; i<6; i++) {
+	// 		color += letters[Math.floor(Math.random() * 16)];
+	// 	}
 
-		return color;
-	}
+	// 	return color;
+	// }
 
-	function makeShapeAppear() {
+	// function makeShapeAppear() {
 
-		var top = Math.random() * 500;
-		var left = Math.random() * 1200;
-		var width = (Math.random() * 50) + 100;
+	// 	var top = Math.random() * 500;
+	// 	var left = Math.random() * 1200;
+	// 	var width = (Math.random() * 50) + 100;
 
-		if (Math.random() > 0.5) {
-			document.getElementById("shape").style.borderRadius = "50%";
-		} else {
-			document.getElementById("shape").style.borderRadius = "0%";	
-		}
+	// 	if (Math.random() > 0.5) {
+	// 		document.getElementById("shape").style.borderRadius = "50%";
+	// 	} else {
+	// 		document.getElementById("shape").style.borderRadius = "0%";	
+	// 	}
 
-	document.getElementById("shape").style.backgroundColor = getRandomColor();
-	document.getElementById("shape").style.width = width + "px";	
-	document.getElementById("shape").style.height = width + "px";
-	document.getElementById("shape").style.top = top + "px";
-	document.getElementById("shape").style.left = left + "px";
-	document.getElementById("shape").style.display = "block";
+	// document.getElementById("shape").style.backgroundColor = getRandomColor();
+	// document.getElementById("shape").style.width = width + "px";	
+	// document.getElementById("shape").style.height = width + "px";
+	// document.getElementById("shape").style.top = top + "px";
+	// document.getElementById("shape").style.left = left + "px";
+	// document.getElementById("shape").style.display = "block";
 
-	start = new Date().getTime();
+	// start = new Date().getTime();
 
-	}
+	// }
 
-	function appearAfterDelay() {
+	// function appearAfterDelay() {
 
-		setTimeout(makeShapeAppear, Math.random() * 2000);
-	}
+	// 	setTimeout(makeShapeAppear, Math.random() * 2000);
+	// }
 
 	appearAfterDelay();
 
